@@ -141,12 +141,18 @@ function swapPlaces(a, b, x, y) {
     const body = document.getElementById("parent");
     body.innerHTML = ` <div class="win">
         <h1>Black win🥳</h1>
+         <form action="/home" method="get" class="formbutton">
+  <button type="submit" id="butsub">go back</button>
+</form>
       </div>`;
   }
   if (isWin() === "W") {
     const body = document.getElementById("parent");
     body.innerHTML = `<div class="win">
         <h1>White win🥳</h1>
+         <form action="/home" method="get" class="formbutton">
+  <button type="submit" id="butsub">go back</button>
+</form>
       </div>`;
   }
 }
