@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.set("view engine", "ejs");
 
+app.use("/", homeRoute);
 app.use("/user", userRoute);
 app.use("/home", homeRoute);
 app.use("/board", boardRoute);
