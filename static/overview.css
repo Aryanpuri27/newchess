@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  border: 2px solid black;
+}
+.logo {
+  height: 6em;
+  /* background-color: aquamarine; */
+  background-image: url(./img/logo.png);
+  box-sizing: border-box;
+  float: left;
+  width: 6em;
+  background-size: cover;
+  background-position: center;
+  margin-left: 22px;
+}
+.info {
+  /* background-color: blueviolet; */
+  float: right;
+  padding-right: 10px;
+  margin-right: 20px;
+  /* width: 6em; */
+  height: 5em;
+  display: flex;
+  /* border: 2px solid black; */
+  padding: 5px;
+}
+.photo {
+  background-color: rgb(204, 236, 236);
+  display: flex;
+  width: 5em;
+  border-radius: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./img/blackKing.png);
+}
+
+.nameinfo {
+  /* background-color: rgb(221, 183, 59); */
+  display: flex;
+  width: 5em;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+.second {
+  width: 50%;
+  height: auto;
+}
+.first {
+  width: 50%;
+  height: auto;
+}
+.friend {
+  background-color: #ca8a8a;
+  width: 35%;
+  height: calc(100vh - 8em);
+  margin: 1em;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+  font-size: 2em;
+  /* sc */
+}
+.friend::-webkit-scrollbar {
+  width: 0.1px; /* Adjust as needed */
+  background-color: transparent;
+}
+.frindbox {
+  border-radius: 30px;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.friendname {
+  font-size: 1em;
+  width: 80%;
+  padding-left: 20px;
+}
+.friendrequest {
+  background-size: cover;
+  background-position: center;
+  background-image: url(./img/user.png);
+  width: 40px;
+  height: 40px;
+}
+p {
+  margin: 10px;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .artical {
+    flex-direction: column;
+  }
+  .friend {
+    width: 80%;
+  }
+}
+input {
+  margin: 10px;
+  padding: 13px;
+  border-radius: 50px;
+}
+.searchbutton {
+  background-size: cover;
+  background-position: center;
+  background-image: url(./img/search.svg);
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+}
+.deeee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.banner-content {
+  width: 60%;
+  height: 60%;
+  background-color: #e4c3ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.req {
+}
+.but {
+  background-size: cover;
+  background-position: center;
+  background-image: url(./img/icons8-play-game-100.png);
+  width: 5em;
+  height: 5em;
+  margin: 3em;
+}

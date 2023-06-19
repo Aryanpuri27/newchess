@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="overview.css" />
+  </head>
+  <body>
+    <header>
+      <div class="first">
+        <div class="logo"></div>
+      </div>
+      <div class="second">
+        <div class="info">
+          <div class="photo">
+            <!-- <img src="../static/img/blackKnight.png" alt="" srcset="" /> -->
+          </div>
+          <div class="nameinfo" id="username">Aryan Puri</div>
+        </div>
+      </div>
+    </header>
+    <article class="artical">
+      <div class="friend" id="online">
+        <p>Online</p>
+        <div class="availablebox" id="onlinebox">
+          <div class="frindbox">
+            <div class="friendname">aryan puri</div>
+            <div class="friendrequest"></div>
+          </div>
+        </div>
+      </div>
+      <div class="friend" id="searchfriend">
+        <div class="deeee">
+          <input type="text" placeholder="search" id="search" />
+          <button id="searchbutton" class="searchbutton"></button>
+        </div>
+        <div class="availablebox" id="availablebox">
+          <div class="frindbox" id="frindbox">
+            <div class="friendrequest"></div>
+            <div class="friendname">aryan puri</div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="banner" id="banner">
+      <div class="banner-content">
+        <div class="req" id="req">Aryan puri want to play with you</div>
+        <div class="but" id="but"></div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.js"></script>
+
+    <script src="friend.js"></script>
+  </body>
+</html>

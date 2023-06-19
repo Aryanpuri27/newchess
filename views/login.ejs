@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <!-- <link rel="stylesheet" href="login.css" /> -->
+    <link rel="stylesheet" href="../css.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <form action="/user/login" method="post" id="login">
+        <h1>login</h1>
+        <input type="email" name="email" placeholder="email" />
+        <input type="text" name="password" placeholder="password" />
+        <button type="submit">submit</button>
+        <span class="link" id="signuplink"> Don't have account </span>
+      </form>
+      <form action="/user/signup" method="post" id="signup">
+        <h1>signUp</h1>
+        <input type="text" name="name" placeholder="name" />
+        <input type="email" name="email" placeholder="email" />
+        <input type="text" name="password" placeholder="password" />
+        <input
+          type="text"
+          name="passwordConfirm"
+          placeholder="passwordConfirm"
+        />
+        <button type="submit">submit</button>
+        <span class="link" id="loginlink">Already have account</span>
+      </form>
+    </div>
+    <script src="../log.js"></script>
+  </body>
+</html>
