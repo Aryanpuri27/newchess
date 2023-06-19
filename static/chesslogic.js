@@ -89,7 +89,7 @@ socket.on("Board", (data) => {
     body.innerHTML = ` <div class="win">
         <h1>Black win🥳</h1>
          <form action="/home" method="get" class="formbutton">
-  <button type="submit" >go back</button>
+  <button type="submit" id="butsub">go back</button>
 </form>
       </div>`;
   }
@@ -98,7 +98,7 @@ socket.on("Board", (data) => {
     body.innerHTML = `<div class="win">
         <h1>White win🥳</h1>
          <form action="/home" method="get" class="formbutton">
-  <button type="submit" >go back</button>
+  <button type="submit" id="butsub" >go back</button>
 </form>
       </div>`;
   }
